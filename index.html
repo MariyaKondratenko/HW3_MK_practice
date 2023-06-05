@@ -16,11 +16,11 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <br>
+        <br />
         <h1>MY SITE</h1>
-        <br>
+        <br />
         <nav class="navi">
-          <br>
+          <br />
           <ul>
             <li>
               <a href="#home">Home</a>
@@ -38,99 +38,136 @@
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <br>
+          <br />
         </nav>
       </header>
 
       <main>
         <section class="content" id="home">
           <h2>Home</h2>
-          <p>Some home content</p>
+          <p><span style="font-size:x-small; color: rgb(244, 74, 58);">necessary information</span></p>
 
           <form action="">
             <label for="firstname">Firstname</label>
-            <input type="text" name="firstname" id="firstname" placeholder="enter user name">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="enter user name"
+            />
 
             <label for="lastname">Lastname</label>
-            <input type="text" name="lastname" id="lastname" placeholder="enter user lastname">
-       
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="enter user lastname"
+            />
+
             <label for="password">Password</label>
-            <input type="Password" name="Password" id="pasword" placeholder="enter user Password">
+            <input
+              type="Password"
+              name="Password"
+              id="pasword"
+              placeholder="enter user Password"
+            />
 
             <label for="confim-password">Confim password</label>
-            <input type="password" name="confim-password" id="confim-password" placeholder="Confim user Password">
-
+            <input
+              type="password"
+              name="confim-password"
+              id="confim-password"
+              placeholder="Confim user Password"
+            />
+            <br>
+            <hr>
+            <p1><span style="font-size:x-small; color: rgb(244, 74, 58);">additional information</span></p>
+  
             <label for="age">Age</label>
-            <input type="number" name="age" id="age" placeholder="enter user age">
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="enter user age"
+            />
+            
+          </form>
+          <br>
 
+          <form>
+            <br>
+            <hr>
             <label for="role">Select user role</label>
-            <select name="role" id="role" >
+            <select name="role" id="role">
               <option>Guest</option>
               <option>User</option>
-
-              <optgroup label="manager type">
-                <option>Manager 1</option>
-                <option>Manager 2</option>
-                <option>Manager 3</option>                
-              </optgroup>
+<!--
+  <optgroup label="manager type">
+    <option>Manager 1</option>
+    <option>Manager 2</option>
+    <option>Manager 3</option>
+  </optgroup>
+-->
 
               <option>Manager</option>
               <option>Admin</option>
             </select>
+            <br>
 
-            <label for="rules">Site rules</label>
-            <input type="checkbox" name="rules" id="rules" required>
-
-            <label for="theme">Site theme</label>
-            <input type="radio" name="theme" id="theme">
-
+            <label for="rules"></label>
+            <input type="checkbox" name="rules" id="rules" required />
+<!--
+  <label for="theme">Site theme</label>
+  <input type="radio" name="theme" id="theme" />
+  
+-->
+            <br>
             <button type="submit">Signup</button>
           </form>
         </section>
 
         <section class="content" id="news">
           <h2>News</h2>
-          <p>Some news content</p>
+          <p>Soon available...</p>
         </section>
 
         <section class="content" id="catalog">
           <h2>Catalog</h2>
           <p>Catalog of users</p>
           <table>
-          <thead>
-            <tr>
-              <th>id</th>
-              <th>firstname</th>
-              <th>lastname</th>
-              <th>age</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>User A name</td>
-              <td>User A lasname</td>
-              <td>31</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>User B name</td>
-              <td>User B lasname</td>
-              <td>31</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>User C name</td>
-              <td>User C lasname</td>
-              <td>31</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <td>3 Total</td>
-            <td>31 Average age</td>
-          </tfoot>
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>User A name</td>
+                <td>User A lasname</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>User B name</td>
+                <td>User B lasname</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>User C name</td>
+                <td>User C lasname</td>
+                <td>31</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td>3 Total</td>
+              <td>31 Average age</td>
+            </tfoot>
           </table>
-
         </section>
 
         <section class="content" id="about">
@@ -144,12 +181,14 @@
           <p>Some Contact content</p>
 
           <form action="mailto:mariya.moko.m@gmail.com">
-            <input type="text" name="subject"> <br>
-            <textarea name="body" id="" cols="30" rows="10"></textarea><br>
-            <input type="submit" value="send email">
+            <input type="text" name="subject" /> <br />
+            <textarea name="body" id="" cols="30" rows="10"></textarea><br />
+            <input type="submit" value="send email" />
           </form>
 
-          <a href="mailto:mariya.moko.m@gmail.com?subject=Subject&body=Body">Send me test email</a>
+          <a href="mailto:mariya.moko.m@gmail.com?subject=Subject&body=Body"
+            >Send me test email</a
+          >
         </section>
       </main>
 
