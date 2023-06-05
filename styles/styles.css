@@ -5,6 +5,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.navi {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(249, 249, 249);
+}
+
+h1 {
+  text-align: center;
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 htlm,
 body {
@@ -13,5 +28,45 @@ body {
 
 .wrapper {
   min-height: 100%;
-  background-color: aqua;
+  background-color: rgb(251, 160, 94);
+}
+
+.header {
+  background-color: rgb(186, 113, 253);
+}
+
+.footer {
+  background-color: rgb(57, 16, 95);
+}
+
+.content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 10px;
+  height: 500px;
+  background-color: rgb(246, 242, 128);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align:center;
+  background-color: rgb(186, 113, 253);
+}
+
+th,td{
+  padding:10px;
+}
+caption{
+ font-size:20px;
+ color:blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
