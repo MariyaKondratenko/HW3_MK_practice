@@ -42,6 +42,46 @@
         <section class="content" id="home">
           <h2>Home</h2>
           <p>Some home content</p>
+
+          <form action="">
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" id="firstname" placeholder="enter user name">
+
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" id="lastname" placeholder="enter user lastname">
+       
+            <label for="password">Password</label>
+            <input type="Password" name="Password" id="pasword" placeholder="enter user Password">
+
+            <label for="confim-password">Confim password</label>
+            <input type="password" name="confim-password" id="confim-password" placeholder="Confim user Password">
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="enter user age">
+
+            <label for="role">Select user role</label>
+            <select name="role" id="role" >
+              <option>Guest</option>
+              <option>User</option>
+
+              <optgroup label="manager type">
+                <option>Manager 1</option>
+                <option>Manager 2</option>
+                <option>Manager 3</option>                
+              </optgroup>
+
+              <option>Manager</option>
+              <option>Admin</option>
+            </select>
+
+            <label for="rules">Site rules</label>
+            <input type="checkbox" name="rules" id="rules" required>
+
+            <label for="theme">Site theme</label>
+            <input type="radio" name="theme" id="theme">
+
+            <button type="submit">Signup</button>
+          </form>
         </section>
 
         <section class="content" id="news">
