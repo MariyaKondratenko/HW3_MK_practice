@@ -5,6 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+.navi {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(249, 249, 249);
+}
+
+h1 {
+  text-align: center;
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
