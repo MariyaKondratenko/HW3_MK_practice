@@ -1,70 +1,119 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/styles.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    media="screen"
-    href="./styles/styles.css"
-  />
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>My site</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#news">News</a>
+            </li>
+            <li>
+              <a href="#catalog">Catalog</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>My site</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#news">News</a>
-          </li>
-          <li>
-            <a href="#catalog">Catalog</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#faq">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <main>
+        <section class="content" id="home">
+          <h2>Home</h2>
+          <p>Some home content</p>
+        </section>
 
-    <main>
-      <section class="content" id="home">
-        <h2>Home</h2>
-        <p>Some home content</p>
-      </section>
-      <section class="content" id="news">
-        <h2>News</h2>
-        <p>Some news content</p>
-      </section>
-      <section class="content" id="catalog">
-        <h2>Catalog</h2>
-        <p>Some Catalog content</p>
-      </section>
-      <section class="content" id="about">
-        <h2>About</h2>
-        <p>Some about content</p>
-      </section>
-      <section class="content" id="fag">
-        <h2>FAQ</h2>
-        <p>Some FAQ content</p>
-      </section>
-    </main>
+        <section class="content" id="news">
+          <h2>News</h2>
+          <p>Some news content</p>
+        </section>
 
-  </div>
+        <section class="content" id="catalog">
+          <h2>Catalog</h2>
+          <p>Catalog of users</p>
+          <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>firstname</th>
+              <th>lastname</th>
+              <th>age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>User A name</td>
+              <td>User A lasname</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>User B name</td>
+              <td>User B lasname</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>User C name</td>
+              <td>User C lasname</td>
+              <td>31</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td>3 Total</td>
+            <td>31 Average age</td>
+          </tfoot>
+          </table>
 
-  <script src="./scripts/index.js"></script>
-</body>
+        </section>
 
+        <section class="content" id="about">
+          <h2>About</h2>
+          <p>Some about content</p>
+        </section>
+
+        <!-- Send email form-->
+        <section class="content" id="contact">
+          <h2>Contact</h2>
+          <p>Some Contact content</p>
+
+          <form action="mailto:mariya.moko.m@gmail.com">
+            <input type="text" name="subject"> <br>
+            <textarea name="body" id="" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="send email">
+          </form>
+
+          <a href="mailto:mariya.moko.m@gmail.com?subject=Subject&body=Body">Send me test email</a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>My sit&#169; </span>
+      </footer>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

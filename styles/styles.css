@@ -20,8 +20,40 @@ body {
   background-color: rgb(251, 160, 94);
 }
 
+.header {
+  background-color: rgb(186, 113, 253);
+}
+
+.footer {
+  background-color: rgb(57, 16, 95);
+}
+
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-block: 10px;
   height: 500px;
   background-color: rgb(246, 242, 128);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align:center;
+}
+
+th,td{
+  padding:10px;
+}
+caption{
+ font-size:20px;
+ color:blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
